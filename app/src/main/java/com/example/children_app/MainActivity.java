@@ -9,13 +9,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button RepoBtn, LessonBtn;
+Button RepoBtn, LessonBtn, QuizBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RepoBtn = findViewById(R.id.Repobtn);
         LessonBtn = findViewById(R.id.Lessonbtn);
+        QuizBtn = findViewById(R.id.Quizbtn);
+        QuizBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            startActivity(intent);
+        });
         LessonBtn.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, LessonActivity.class);
             startActivity(intent);
