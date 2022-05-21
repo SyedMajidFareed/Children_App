@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Children_App</string>
-    <string name="Welcome">Welcome To Children Application</string>
+    <string name="Welcome">Welcome To Children Learning Application</string>
+    <string name="Lesson">Take Lesson</string>
+    <string name="Quiz">Take Quiz</string>
+    <string name="Repo">Check Repository</string>
 </resources>
