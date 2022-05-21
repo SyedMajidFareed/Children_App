@@ -1,8 +1,10 @@
 package com.example.children_app;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -154,5 +156,21 @@ String text;
         }
         else
             text =  "ZERO";
+    }
+    //to restore data on orientation change
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("result",ResultView.getText().toString());
+        outState.putString("value",text);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        ResultView.setText(savedInstanceState.getString("result"));
+        text = (savedInstanceState.getString("value"));
+        questionView.setText(text.toString());
     }
 }
