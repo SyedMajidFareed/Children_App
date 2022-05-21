@@ -12,9 +12,10 @@
     <string name="six">SIX</string>
     <string name="Question">Question: </string>
     <string name="next">NEXT</string>
-    <string name="Select">Select an Option</string>
+    <string name="Select">Press start quiz</string>
     <string name="Result">Neutral</string>
     <string name="Empty"> </string>
+    <string name="Start">Start Quiz</string>
     <string name="title_activity_lesson">LessonActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
