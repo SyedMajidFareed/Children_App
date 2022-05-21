@@ -9,12 +9,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button RepoBtn;
+Button RepoBtn, LessonBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RepoBtn = findViewById(R.id.Repobtn);
+        LessonBtn = findViewById(R.id.Lessonbtn);
+        LessonBtn.setOnClickListener(view -> {
+
+        });
         RepoBtn.setOnClickListener(view -> {
             String webpage = "https://github.com/SyedMajidFareed/Children_App";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(webpage));

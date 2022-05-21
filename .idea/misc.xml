@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Assignments/Children_App/app/src/main/res/layout-land/activity_main.xml" value="0.2625" />
+        <entry key="..\:/Android_Assignments/Children_App/app/src/main/res/layout/activity_lesson.xml" value="0.25" />
+        <entry key="..\:/Android_Assignments/Children_App/app/src/main/res/layout/activity_lesson2.xml" value="0.25" />
         <entry key="..\:/Android_Assignments/Children_App/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android_Assignments/Children_App/app/src/main/res/layout/content_scrolling.xml" value="0.25" />
       </map>
     </option>
   </component>
