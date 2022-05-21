@@ -17,7 +17,8 @@ Button RepoBtn, LessonBtn;
         RepoBtn = findViewById(R.id.Repobtn);
         LessonBtn = findViewById(R.id.Lessonbtn);
         LessonBtn.setOnClickListener(view -> {
-
+            Intent intent = new Intent(MainActivity.this, LessonActivity.class);
+            startActivity(intent);
         });
         RepoBtn.setOnClickListener(view -> {
             String webpage = "https://github.com/SyedMajidFareed/Children_App";
