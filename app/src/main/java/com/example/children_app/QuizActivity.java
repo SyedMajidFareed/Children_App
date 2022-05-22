@@ -17,7 +17,7 @@ ImageButton OneBtn, TwoBtn, ThreeBtn, FourBtn, FiveBtn, SixBtn;
 Button nextBtn, startBtn;
 Random random;
 TextView questionView, ResultView;
-String text;
+String text = "Press start quiz";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
