@@ -24,12 +24,12 @@ String text;
         setContentView(R.layout.activity_quiz);
         questionView = findViewById(R.id.questionView);
         ResultView = findViewById(R.id.answerView);
-        OneBtn= findViewById(R.id.imageButton);
-        TwoBtn= findViewById(R.id.imageButton2);
-        ThreeBtn= findViewById(R.id.imageButton3);
-        FourBtn= findViewById(R.id.imageButton4);
-        FiveBtn= findViewById(R.id.imageButton5);
-        SixBtn= findViewById(R.id.imageButton6);
+        OneBtn = findViewById(R.id.imageButton);
+        TwoBtn = findViewById(R.id.imageButton2);
+        ThreeBtn = findViewById(R.id.imageButton3);
+        FourBtn = findViewById(R.id.imageButton4);
+        FiveBtn = findViewById(R.id.imageButton5);
+        SixBtn = findViewById(R.id.imageButton6);
         OneBtn.setOnClickListener(this);
         TwoBtn.setOnClickListener(this);
         ThreeBtn.setOnClickListener(this);
@@ -42,11 +42,11 @@ String text;
         startBtn.setOnClickListener(view -> {
             TextSetter();
             enabled(nextBtn);
+            disabled(startBtn);
         });
         nextBtn.setOnClickListener(view -> {
             TextSetter();
             ResultView.setText("Neutral");
-            disabled(startBtn);
         });
     }
     public void disabled(View v)
