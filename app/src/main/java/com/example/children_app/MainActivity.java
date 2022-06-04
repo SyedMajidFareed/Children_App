@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button RepoBtn, LessonBtn, QuizBtn;
+Button RepoBtn, LessonBtn, QuizBtn, ListViewBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,11 @@ Button RepoBtn, LessonBtn, QuizBtn;
         RepoBtn = findViewById(R.id.Repobtn);
         LessonBtn = findViewById(R.id.Lessonbtn);
         QuizBtn = findViewById(R.id.Quizbtn);
+        ListViewBtn = findViewById(R.id.listviewBtn);
+        ListViewBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            startActivity(intent);
+        });
         QuizBtn.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, QuizActivity.class);
             startActivity(intent);

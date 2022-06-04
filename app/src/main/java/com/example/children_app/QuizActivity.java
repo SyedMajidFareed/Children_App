@@ -164,6 +164,7 @@ String text = "Press start quiz";
         super.onSaveInstanceState(outState);
         outState.putString("result",ResultView.getText().toString());
         outState.putString("value",text);
+
     }
 
     @Override

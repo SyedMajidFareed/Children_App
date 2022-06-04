@@ -35,7 +35,7 @@
         android:id="@+id/Quizbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:text="@string/Quiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -46,11 +46,21 @@
         android:id="@+id/Repobtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="116dp"
         android:drawableEnd="@drawable/buttonimg"
         android:text="@string/Repo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Quizbtn" />
+
+    <Button
+        android:id="@+id/listviewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/List"
+        app:layout_constraintStart_toStartOf="@+id/Quizbtn"
         app:layout_constraintTop_toBottomOf="@+id/Quizbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
