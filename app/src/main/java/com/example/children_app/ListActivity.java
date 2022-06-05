@@ -3,7 +3,10 @@ package com.example.children_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,5 +27,9 @@ ListView listView;
         listView = findViewById(R.id.mycustomList);
         MyListViewAdapter listviewAdapter = new MyListViewAdapter(this, dataClassArrayList);
         listView.setAdapter(listviewAdapter);
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            String text = "You Clicked on Position " + i;
+            Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
+        });
     }
 }
