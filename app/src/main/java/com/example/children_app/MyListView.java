@@ -39,5 +39,4 @@ class MyListViewAdapter extends ArrayAdapter<DataClass>
         return convertView;
     }
 
-
 }
