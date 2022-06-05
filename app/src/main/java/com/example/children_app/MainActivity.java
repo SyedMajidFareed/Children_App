@@ -19,7 +19,7 @@ Button RepoBtn, LessonBtn, QuizBtn, ListViewBtn;
         QuizBtn = findViewById(R.id.Quizbtn);
         ListViewBtn = findViewById(R.id.listviewBtn);
         ListViewBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            Intent intent = new Intent(MainActivity.this, ListActivity.class);
             startActivity(intent);
         });
         QuizBtn.setOnClickListener(view -> {
